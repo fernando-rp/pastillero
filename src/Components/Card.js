@@ -4,7 +4,6 @@ import CardContent from "./CardContent";
 
 const Card=()=>{
 
-
     const [allProductss, setAllProductss] = useState(null)
     const [userPurchases, setUserPurchases] = useState(null)
 
@@ -59,11 +58,11 @@ const Card=()=>{
             <div className="container">
                 <div className="row">
                     <div className="col-md-5 col-sm-10 mx-auto title-container">
-                        <h3 className="title">Te queda</h3>
+                        <h4 className="title">Te queda</h4>
                     </div>
                 </div>
 
-                {/* El siguiente componente recibe la información del Fetch para mostrar en la pantalla del usario */}
+                {/* El siguiente componente recibe la información del Fetch para posteriormente mostrarlo en la pantalla del usario */}
                 <CardContent items={allProductss} purchases={userPurchases}/>                
 
             </div>
