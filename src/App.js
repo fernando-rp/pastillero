@@ -1,13 +1,10 @@
 
 import Card from './Components/Card'
-
+import Navbar from './Components/Navbar';
+import Banner from './Components/Banner';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
-
-
-import Navbar from './Components/Navbar';
-import Banner from './Components/Banner';
 
 function App() {
   return (

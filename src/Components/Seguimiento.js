@@ -64,19 +64,19 @@ const Seguimiento=(props)=>{
         }
     }
      
-    console.log(userPurchases)
-
    return(
         
         <>
                {!! currentUserProducts&&
-                currentUserProducts.map((producto)=>{
+                currentUserProducts.map((producto,index)=>{
                     if(producto[0]===idProducts){
                         return(
                             <>
-                                <a href="https://mekiapp.com/" target="_blank" rel="noreferrer" className="products-left">Quedan {producto[1]} comprimidos</a>
-                                <br/>
-                                <a href="https://mekiapp.com/" target="_blank" rel="noreferrer" className="days-left">Para {producto[1]} días</a>
+                                <div key={index}>
+                                    <a href="https://mekiapp.com/" target="_blank" rel="noreferrer" className="products-left">Quedan {producto[1]} comprimidos</a>
+                                    <br />
+                                    <a  href="https://mekiapp.com/" target="_blank" rel="noreferrer" className="days-left">Para {producto[1]} días</a>
+                                </div>
                             </>
                         )
                     }
